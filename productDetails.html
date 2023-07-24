@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Product</title>
+</head>
+<body>
+    <h2> Product Details</h2>
+    <table border="0">
+		<form method="POST" action="<?php echo $_SERVER['PHP_SELF'] ?>" enctype="multipart/form-data">
+			<tr>
+				<td>Product Name </td>
+				<td><input type="text" name="pro_name" placeholder="Enter Product Name"></td>
+			</tr>
+			<tr>
+				<td>Product Code</td>
+				<td><input type="text" name="pro_code" placeholder="Bar Code"></td>
+			</tr>
+			<tr>
+				<td>Quantity </td>
+				<td><input type="number" name="pro_qty" min="1"></td>
+			</tr>
+			<tr>
+				<td>Category </td>
+				<td >
+					<input type="text" name="pro_cat" >
+				</td>
+			</tr>
+			<tr>
+				<td>Brands </td>
+				<td>
+					<input type="text" name="pro_brands" >
+				</td>
+			</tr>
+			<tr>
+				<td> Product Image</td>
+				<td><input type="file" name="pro_pic"></td>
+			</tr>
+			<tr>
+				<td> </td>
+				<td>
+					<input type="submit" value="Update">
+					<input type="reset" value="Clear">
+				</td>
+			</tr>
+		</form>
+	</table>
+</body>
+</html>

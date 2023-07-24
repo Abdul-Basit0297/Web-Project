@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <table border="0">
+        <h2>Customer Login</h2>
+        <form method="POST" action="<?php echo $_SERVER['PHP_SELF'] ?>" enctype="multipart/form-data">
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="userEmail" required placeholder="name@domain.com"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="userPassword" required placeholder="Enter Password"></td>
+                </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td>
+                <input type="submit" value="Login" > 
+                <input type="reset" value="Clear">
+                </td>
+            </tr>
+        </form>
+        </table>
+</body>
+</html>
